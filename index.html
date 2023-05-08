@@ -1,261 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Crisálida</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-		/* Estilos personalizados para o site */
-
-		body {
-			background-color: #f2f2f2;
-			color: #212529;
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-		}
-
-		.container {
-			margin-top: 50px;
-		}
-
-		.header {
-			padding: 30px;
-			text-align: center;
-		}
-
-		.title {
-			font-family: 'Bebas Neue', cursive;
-			font-size: 50px;
-			margin-bottom: 0;
-			text-shadow: 0 0 32px #f2f2f2;
-		}
-
-		.subtitle {
-			text-shadow: 0 0 32px #f2f2f2;
-			font-size: 24px;
-			margin-top: 10px;
-		}
-
-		.card {
-			width: 800px;
-            max-width: 80%;
-            margin: auto;
-			margin-top: 30px;
-			border-radius: 5px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-		}
-
-		.card-body {
-			padding: 30px;
-		}
-
-		.card-title {
-			font-size: 24px;
-			margin-bottom: 0;
-			
-		}
-
-		.card-text {
-			margin-top: 10px;
-			font-size: 16px;
-		}
-
-		.btn-primary {
-			background-color: #f2f2f2;
-			border-color: #212529;
-			color: #212529;
-			font-size: 16px;
-			font-weight: bold;
-			padding: 10px 20px;
-			margin-top: 20px;
-		}
-
-		.btn-primary:hover {
-			background-color: #212529;
-			border-color: #f2f2f2;
-		}
-
-		.navereader {
-			background-image: url(img/fundo1.jpg);
-			background-position: center;
-			background-size: cover;
-		}
-
-		/* Estilos para o menu de navegação */
-
-		.navbar {
-			color: #f2f2f2;
-			padding: 10px;
-		}
-
-		.navbar-brand {
-			color: #212529;
-			font-size: 30px;
-			font-family: 'Bebas Neue', cursive;
-			text-shadow: 0 0 32px #f2f2f2;
-		}
-
-		a.navbar-brand:hover {
-			color: #f2f2f2;
-		}
-
-		.navbar-toggler {
-			border-color: #f2f2f2;
-		}
-
-		.navbar-toggler-icon {
-			background-color: #f2f2f2;
-		}
-
-		.navbar-nav li {
-			margin: 0 10px;
-		}
-
-		.navbar-nav li a {
-			color: #212529;
-			text-decoration: none;
-			font-size: 18px;
-			transition: all 0.2s ease-in-out;
-			position: relative;
-			display: inline-block;
-		}
-
-		.navbar-nav li a:before {
-			content: "";
-			position: absolute;
-			left: 0;
-			bottom: -5px;
-			width: 100%;
-			height: 2px;
-			background-color: #212529;
-			transform: scaleX(0);
-			transform-origin: left;
-			transition: transform 0.2s ease-in-out;
-		}
-
-		.navbar-nav li a:hover:before {
-			transform: scaleX(1);
-		}
-	</style>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Charmonman&family=Comfortaa&family=Open+Sans&display=swap" rel="stylesheet">
+	<title>Crisálida</title>
 </head>
 <body>
-	<div class="navereader">
-	<nav class="navbar navbar-expand-md">
-		<div class="container">
-			<a class="navbar-brand"
-			href="https://crisalida.pro.br" target="_self">Crisálida</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#sobre">Sobre</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#conteudo">Conteúdo</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#precos">Preços</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contato">Contato</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<div class="header">
-		<div class="container">
-			<h1 class="title">Crisálida</h1>
-			<p class="subtitle">Reforço Escolar &bull; Professor Leon Lacerda</p>
-		</div>
+	<div class="main">
+	<div class="cabeçalho">
+		<nav class="menu">
+			<ul>
+				<li class="nav-home"><a href="https://www.crisalida.pro.br" target="_self">Crisálida</a></li>
+				<li class="nav-link"><a href="#contato" target="_self">Contato</a></li>
+				<li class="nav-link"><a href="#professor" target="_self">Professor</a></li>
+				<li class="nav-link"><a href="#preços" target="_self">Preços</a></li>
+				<li class="nav-link"><a href="#horarios" target="_self">Horários</a></li>
+				<li class="nav-link"><a href="#curso" target="_self">Curso</a></li>
+			</ul>
+		</nav>
+		<hgroup class="h1-hgroup">
+			<h1>Crisálida</h1>
+			<p>Reforço Escolar</p>
+		</hgroup>
+	</div>
+	<section class="conteudo">
+	<div class="card" id="curso">
+		<h2>Sobre o curso</h2>
+		<p class="texto-normal">
+			O curso de reforço escolar foi desenvolvido para auxiliar estudantes que estão com dificuldades em alguma matéria ou que desejam melhorar seu desempenho acadêmico. Com professores qualificados e uma metodologia eficiente, o curso oferece aulas dinâmicas e personalizadas, adaptadas às necessidades de cada aluno.
+		</p>
+	</div>
+	<div class="card" id="horarios">
+		<h2>Horários</h2>
+		<p class="texto-normal">
+			O curso aborda diversas disciplinas, desde matemática e física até português e história, com aulas teóricas e práticas que visam fixar o conteúdo. Além disso, o curso oferece suporte para tarefas escolares e trabalhos acadêmicos, auxiliando o aluno em todas as etapas do processo de aprendizagem.
+		</p>
+	</div>
+	<div class="card" id="preços">
+		<h2>Preços</h2>
+		<p class="texto-normal">
+			Oferecemos diferentes planos para atender às necessidades de cada aluno, com preços acessíveis e flexíveis. Além disso, o curso oferece a primeira aula gratuita, para que o aluno possa conhecer a metodologia e decidir se é a opção ideal para ele.
+		</p>
+	</div>
+	<div class="card" id="professor">
+		<h2>Sobre o professor</h2>
+		<p class="texto-normal">
+			Oferecemos diferentes planos para atender às necessidades de cada aluno, com preços acessíveis e flexíveis. Além disso, o curso oferece a primeira aula gratuita, para que o aluno possa conhecer a metodologia e decidir se é a opção ideal para ele.
+		</p>
+	</div>
+	<div class="card" id="contato">
+		<h2>Contato</h2>
+		<p class="texto-normal">
+			Ficou interessado no curso? Entre em contato conosco para mais informações ou para agendar sua primeira aula gratuita. Estamos disponíveis por telefone, e-mail e redes sociais.
+		</p>
 	</div>
 </div>
-
-	<div id="sobre" class="card">
-		<div class="container">
-			<div class="card-body">
-				<h2 class="card-title">Sobre o curso</h2>
-				<p class="card-text">O curso de reforço escolar foi desenvolvido para auxiliar estudantes que estão com dificuldades em alguma matéria ou que desejam melhorar seu desempenho acadêmico. Com professores qualificados e uma metodologia eficiente, o curso oferece aulas dinâmicas e personalizadas, adaptadas às necessidades de cada aluno.</p>
-				<a href="#" class="btn btn-primary">Saiba mais</a>
-			</div>
-		</div>
-	</div>
-
-	<div id="conteudo" class="card">
-		<div class="container">
-			<div class="card-body">
-				<h2 class="card-title">Conteúdo do curso</h2>
-				<p class="card-text">O curso aborda diversas disciplinas, desde matemática e física até português e história, com aulas teóricas e práticas que visam fixar o conteúdo. Além disso, o curso oferece suporte para tarefas escolares e trabalhos acadêmicos, auxiliando o aluno em todas as etapas do processo de aprendizagem.</p>
-				<a href="#" class="btn btn-primary">Veja a lista completa de disciplinas</a>
-			</div>
-		</div>
-	</div>
-
-	<div id="precos" class="card">
-		<div class="container">
-			<div class="card-body">
-				<h2 class="card-title">Preços e planos</h2>
-				<p class="card-text">Oferecemos diferentes planos para atender às necessidades de cada aluno, com preços acessíveis e flexíveis. Além disso, o curso oferece a primeira aula gratuita, para que o aluno possa conhecer a metodologia e decidir se é a opção ideal para ele.</p>
-				<a href="#" class="btn btn-primary">Conheça nossos planos</a>
-		
-            </div>
-        </div>
-	</div>
-	
-	<div id="contato" class="card">
-		<div class="container">
-			<div class="card-body">
-				<h2 class="card-title">Entre em contato</h2>
-				<p class="card-text">Ficou interessado no curso? Entre em contato conosco para mais informações ou para agendar sua primeira aula gratuita. Estamos disponíveis por telefone, e-mail e redes sociais.</p>
-				<form>
-					<div class="form-group">
-						<label for="nome">Nome:</label>
-						<input type="text" class="form-control" id="nome">
-					</div>
-					<div class="form-group">
-						<label for="email">E-mail:</label>
-						<input type="email" class="form-control" id="email">
-					</div>
-					<div class="form-group">
-						<label for="mensagem">Mensagem:</label>
-						<textarea class="form-control" id="mensagem"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary">Enviar</button>
-				</form>
-			</div>
-		</div>
-	</div>
-    
-        <footer class="footer">
-            <div class="container">
-                <p>&copy; 2023 Crisálida Reforço Escolar. Todos os direitos reservados.</p>
-                <p class="social-icons">
-                    <a href="https://www.instagram.com/crisalida.re/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-				</p>
-            </div>
-        </footer>
-    
-        <!-- JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/esm/popper-core.min.js"
-            integrity="sha384-oo9XGJfW8xihIs0BCwFwYvrJpYc+UM8nqKTlQm/tG9rkSzgRjSy8NoHn1Y4wBLf4" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-            integrity="sha384-35OeI/NltcXr+dtGQJSC+zBa/uPb0Y+TJYt+i/kVtvlvCJZs89ttM9CpThsBN7J0"
-            crossorigin="anonymous"></script>
-    
-    </body>
-    
-    </html>
-    
+	</section>
+	<footer></footer>
+</body>
+</html>
