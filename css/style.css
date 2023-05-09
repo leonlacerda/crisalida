@@ -142,6 +142,7 @@ html, body {
         box-shadow: 0px 1px 4px var(--cor5);
         padding: 40px;
         margin-bottom: 40px;
+        position: relative;
     }
 
     .card h2 {
@@ -196,12 +197,16 @@ html, body {
         float: right;
     }
 
-    div#horarios table {
-            margin: auto;
-            background-color: var(--cor4);
-            padding: 20px;
-            color: var(--cor5);
-            border: 1px solid var(--cor5);
+    .tabela {
+        display: flex;
+    }
+
+    .tabela table {
+        margin: auto;
+        background-color: var(--cor4);
+        padding: 20px;
+        color: var(--cor5);
+        border: 1px solid var(--cor5);
         }
 
     .coluna {
