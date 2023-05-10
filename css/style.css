@@ -197,17 +197,42 @@ html, body {
         float: right;
     }
 
-    .tabela {
-        display: flex;
+/* ---------- Tabela antiga ----------
+
+        .tabela { /* 2: div que contém a table * /
     }
 
-    .tabela table {
-        margin: auto;
+        .tabela table { /* 3: a table com todo seu código * /
         background-color: var(--cor4);
         padding: 20px;
         color: var(--cor5);
         border: 1px solid var(--cor5);
         }
+
+    .tabela thead /* (cabeçalho: título + dias da semana) * /, tr, th, td {
+        background-color: blue;
+    }
+
+    .tabela th.coluna0 { /* título da tabela. th = table head, célula de cabeçalho * /
+        color: yellow;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .tabela th:not(.coluna0) { /* dias da semana.  th = table head, célula de cabeçalho * /
+        color: palevioletred;
+        width: 15.8%;
+        font-size: .63em;
+    }
+
+    .tabela td { /* td = célula de dados * /
+        color: lime;
+        width: 15.8%;
+    }
+
+    .tabela tr {
+        display: block;
+    }
 
     .coluna {
         border: 1px solid black;
@@ -221,6 +246,57 @@ html, body {
         color: var(--cor2);
     }
 
-    footer {
-        height: 100px;
-    }
+*/
+
+/* Tabela nova */
+
+.container-tabela {
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    font-size: 1em;
+}
+
+.titulo-tabela {
+    font-size: 1em;
+    text-align: center;
+    border: 1px inset var(--cor5);
+    color: var(--cor4);
+    background-color: var(--cor5);
+    font-weight: lighter;
+}
+
+.cabecalho-tabela {
+    color: var(--cor5);
+    font-size: 1em;
+    background-color: var(--cor4);
+}
+
+.primeira {
+    color: var(--cor5);
+}
+
+.tabela-flex {
+    display: flex;
+    transition: 0.5s;
+    justify-content: space-evenly;
+}
+
+.linha-flex {
+    text-align: center;
+    width: 16.7%;
+    border: 1px solid var(--cor1);
+    margin: 0;
+    flex-grow: 6;
+    flex-shrink: 6;
+}
+
+footer {
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+footer p {
+    text-align: center;
+    font-family: var(--fonte-opensans);
+}
