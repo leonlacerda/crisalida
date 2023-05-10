@@ -27,21 +27,41 @@ a {
 }
 
 html, body {
-    /* Faz o viewport width não incluir a scrollbar */
     font-family: var(--fonte-opensans);
     color: var(--cor5);
     scroll-behavior: smooth;
     }
 
-/*
-    @media (max-width:600px) {
-        hgroup {
-            margin-top: 200px;
-        }
-    }
-*/
+    @media (max-width:800px) {
 
-    .main {
+        .menu li:not(.nav-home) {
+            display: block;
+            float: right;
+        }
+
+        main {
+            padding: 0;
+        }
+
+        .conteudo {
+            visibility:visible;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+
+        .card {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+
+        .container-tabela {
+            font-size: .8em !important;
+            line-height: 16px !important;
+        }
+
+    }
+
+    main {
         max-width: 1000px;
         margin: auto;
         background-color: var(--cor4);
@@ -72,7 +92,7 @@ html, body {
         display: inline-block;
     }
 
-    .nav-link    a {
+    .nav-link a {
         transition: all 0.2s ease-in-out;
         position: relative;
     }
@@ -138,7 +158,6 @@ html, body {
     }
 
     .card {
-        box-sizing: border-box;
         box-shadow: 0px 1px 4px var(--cor5);
         padding: 40px;
         margin-bottom: 40px;
