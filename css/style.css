@@ -360,10 +360,11 @@ html, body {
 }
 
 .figure-wp {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     float: left;
     padding: 20px 40px 0px 20px;
+    font-size: .8em;
 }
 
 .img-wp {
