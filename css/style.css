@@ -170,7 +170,7 @@ html, body {
     }
 
     .h1-hgroup img {
-        height: 200px;
+        height: 160px;
     }
 
     .h1-hgroup h1 {
@@ -363,8 +363,9 @@ html, body {
     width: 140px;
     height: 140px;
     float: left;
-    padding: 20px 40px 0px 20px;
-    font-size: .8em;
+    padding: 0px 20px 20px 20px;
+    margin: 20px;
+    font-size: .9em;
 }
 
 .img-wp {
