@@ -19,6 +19,7 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: transform 0.2s ease-in-out !important;
 }
 
 a {
@@ -55,7 +56,7 @@ html, body {
     .container-tabela {
         font-size: .8em !important;
         line-height: 16px !important;
-        transition: all 0.2s ease-in-out !important;
+
     }
 
     .nav-interno {
@@ -83,6 +84,14 @@ html, body {
         line-height:59.2px;
     }
 
+    .nav-link a:hover:before {
+        transform: scaleX(0) !important;
+    }
+
+}
+
+.nav-interno {
+    transition: all 0.2s ease-in-out !important;
 }
 
 @media (max-width:500px) {
@@ -92,7 +101,6 @@ html, body {
         display: block;
         margin: auto !important;
         margin-top: 20px !important;
-        transition: all 0.2s ease-in-out !important;
     }
 
     .container-tabela {
@@ -100,7 +108,6 @@ html, body {
         line-height: 16px !important;
         padding-left: 5px !important;
         padding-right: 5px !important;
-        transition: all 0.2s ease-in-out !important;
     }
 }
 
@@ -125,6 +132,7 @@ html, body {
 
     .menu {
         box-sizing: border-box;
+        position: relative;
         margin: auto;
         height: 60px;
         background-color: rgba(242, 242, 242, .8);
@@ -133,10 +141,10 @@ html, body {
 
     .menu li {
         display: inline-block;
+        margin-right: 20px;
     }
 
-    .nav-link a {
-        transition: all 0.2s ease-in-out;
+    .nav-link {
         position: relative;
     }
 
@@ -158,16 +166,19 @@ html, body {
     }
 
     .nav-home {
-        float: left;
+        display: inline-block;
+        position: absolute;
+        left: 0;
         margin-left: 20px;
         font-family: var(--fonte-charmonman);
         color: var(--cor3);
         font-weight: bold;
     }
 
-    .nav-link {
-        float: right;
-        margin-right: 20px;
+    .nav-interno {
+        display: inline-block;
+        position: absolute;
+        right: 0;
     }
 
     .h1-hgroup {
@@ -213,18 +224,19 @@ html, body {
         letter-spacing: .1em;
     }
 
-    .card a:not(.link-neutro), footer a {
-        color: var(--cor1);
+    .card a, footer a {
         font-weight: bold;
-    }
-
-    .card a:hover:not(.link-neutro), footer a:hover {
-        color: var(--cor2);
+        color: var(--cor1);
         transition: transform 0.2s ease-in-out;
     }
 
-    .card a:visited:not(.link-neutro), footer a:visited {
+    .card a:visited, footer a:visited {
         color: var(--cor3);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .card a:hover, footer a:hover {
+        color: var(--cor2);
         transition: transform 0.2s ease-in-out;
     }
 
