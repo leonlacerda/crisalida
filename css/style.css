@@ -205,6 +205,16 @@ html, body {
         letter-spacing: .1em;
     }
 
+    .card a:not(.link-neutro), footer a {
+        color: var(--cor1);
+        font-weight: bold;
+    }
+
+    .card a:hover:not(.link-neutro), footer a:hover {
+        color: var(--cor2);
+        transition: transform 0.2s ease-in-out;
+    }
+
     .texto-normal, .card blockquote {
         text-indent: 3.5em;
         font-family: var(--fonte-opensans);
@@ -224,7 +234,6 @@ html, body {
         border: 1px solid var(--cor5);
         box-shadow: 0px 1px 1px var(--cor1);
         border-radius: 100%;
-
     }
 
     .quote {
@@ -343,6 +352,33 @@ html, body {
     margin: 0;
     flex-grow: 6;
     flex-shrink: 6;
+}
+
+.link-neutro:hover {
+    mix-blend-mode:multiply;
+    font-weight: bold;
+}
+
+.figure-wp {
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 20px 40px 0px 20px;
+}
+
+.img-wp {
+    width: 100%;
+    margin: auto;
+    border: 1px solid var(--cor5);
+    box-shadow: 0px 1px 1px var(--cor1);
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.figcaption-wp {
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
 }
 
 footer {
