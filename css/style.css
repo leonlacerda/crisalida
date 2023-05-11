@@ -215,6 +215,11 @@ html, body {
         transition: transform 0.2s ease-in-out;
     }
 
+    .card a:visited:not(.link-neutro), footer a:visited {
+        color: var(--cor3);
+        transition: transform 0.2s ease-in-out;
+    }
+
     .texto-normal, .card blockquote {
         text-indent: 3.5em;
         font-family: var(--fonte-opensans);
