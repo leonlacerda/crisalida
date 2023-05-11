@@ -39,6 +39,14 @@ html, body {
         padding-right: 20px !important;
     }
 
+    .cabeçalho {
+        margin-top: 0px !important;
+    }
+
+    .nav-interno {
+        top: 0px !important;
+    }
+
     .card {
         padding-left: 20px !important;
         padding-right: 20px !important;
