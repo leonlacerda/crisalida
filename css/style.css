@@ -312,7 +312,8 @@ html, body {
 
 footer {
     margin: auto;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    background-color: var(--cor4);
 }
 
 footer p {
