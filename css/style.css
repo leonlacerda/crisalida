@@ -35,13 +35,17 @@ html, body {
 
 @media (max-width:800px) {
 
+    .sanduíche {
+        visibility:visible !important;
+    }
+
     .conteudo {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
 
     .cabeçalho {
-        margin-top: 0px !important;
+        margin-top: 5px !important;
     }
 
     .nav-interno {
@@ -77,11 +81,16 @@ html, body {
         text-align: center;
         margin: auto;
         margin-top: 0px;
+        margin-right: 0px !important;
         width: 100%;
         border-bottom: 1px solid var(--cor2);
         border-left: 1px solid var(--cor2);
         border-right: 1px solid var(--cor2);
         line-height:59.2px;
+    }
+
+    .nav-link {
+        margin-right: 0px;
     }
 
     .nav-link a:hover:before {
@@ -118,7 +127,6 @@ html, body {
     }
 
     .cabeçalho {
-        box-sizing: border-box;
         width: 100%;
         height: 420px;
         margin: auto;
@@ -130,8 +138,30 @@ html, body {
         border: 1px solid var(--cor2);
     }
 
+    .sanduíche {
+        display: flex;
+        position: absolute;
+        right: 0px;
+        z-index: 1;
+        color: var(--cor5);
+        visibility: hidden;
+        height: 60px;
+        width: 120px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .material-icons {
+        width: 60px;
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 24px;
+        text-align: center;
+      }
+
     .menu {
-        box-sizing: border-box;
         position: relative;
         margin: auto;
         height: 60px;
