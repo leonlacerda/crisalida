@@ -33,6 +33,22 @@ html, body {
     scroll-behavior: smooth;
     }
 
+@media (min-width: 800px) {
+
+    #nav-interno {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    #cabeçalho {
+        margin-top: 0px;
+        transition: transform 0.2s ease-in-out;
+    }
+}
+
 @media (max-width:800px) {
 
     #sanduíche {
@@ -57,45 +73,41 @@ html, body {
       }
 
     #nav-interno { /* display: inline-block; */
-        top: 0px !important;
+        top: 0px;
         box-sizing: border-box;
-        display: inline-block;
+        display: none;
         position: absolute;
         right: 0px;
         width: 50%;
         background-color: rgba(242, 242, 242, .8);
-        margin-top: 60px;
-        transition: all 0.2s ease-in-out !important;
+        margin-top: 59px;
+        transition: all 0.2s ease-in-out;
     }
 
     #fechado { /* display: none; */
-        display: inline-block !important;
-        transition: transform 0.2s ease-in-out !important;
+        display: inline-block;
+        transition: transform 0.2s ease-in-out;
         
     }
 
     #aberto {  /* display: inline-block; */
-        display: none !important;
-        transition: transform 0.2s ease-in-out !important;
+        display: none;
+        transition: transform 0.2s ease-in-out;
     }
 
     .conteudo {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-
-    .cabeçalho {
-        margin-top: 5px !important;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .card {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .container-tabela {
-        font-size: .8em !important;
-        line-height: 16px !important;
+        font-size: .8em;
+        line-height: 16px;
 
     }
 
@@ -207,12 +219,6 @@ html, body {
         font-family: var(--fonte-charmonman);
         color: var(--cor3);
         font-weight: bold;
-    }
-
-    #nav-interno {
-        display: inline-block;
-        position: absolute;
-        right: 0;
     }
 
     .h1-hgroup {
