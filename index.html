@@ -14,22 +14,22 @@
 
 </head>
 
-<body cz-shortcut-listen="true"><!-- parâmatro para a tabela -->
+<body >
 	<main>
 	<div class="cabeçalho">
-		<div class="sanduíche fechado">
-			<span class="material-icons">
+		<div id="sanduíche"  onclick="mudaSanduiche()">
+			<span class="material-icons" id="fechado">
 				menu
 			</span>
-			<span class="material-icons aberto">
+			<span class="material-icons" id="aberto">
 				close
 			</span>
 		</div>
-		<nav class="menu">
+		<nav id="menu">
 			<ul>
 				<li class="nav-home"><a href="https://www.crisalida.pro.br" target="_self">Crisálida</a></li>
 			</ul>
-			<ul class="nav-interno">
+			<ul id="nav-interno">
 				<li class="nav-link"><a href="#curso" target="_self">Curso</a></li>
 				<li class="nav-link"><a href="#vagas" target="_self">Vagas</a></li>
 				<li class="nav-link"><a href="#videos" target="_self">Vídeos</a></li>
@@ -64,66 +64,6 @@
 			<p class="texto-normal">
 				Logo abaixo tornamos público nosso quadro de vagas por dias e horários, atualizado em tempo real, para que pais e responsáveis possam saber de antemão de nossa disponibilidade. Mas isso não deve dissuadi-los de nossas tratativas em nível humano. Não tenham receio de nos abordar. Com ou sem vaga, ficaremos mais que felizes de atender a todos com o cuidado e atenção que merecem.
 			</p>
-			
-			<!--<div class="tabela">
-				<table>
-					<thead>
-					<tr>
-						<th colspan="6"  class="coluna coluna0" data-column="coluna0">Número de alunos por turma</th>
-					</tr>
-					<tr class="linha linha1">
-						<th class="coluna coluna1" data-column="coluna1">Horário</th>
-						<th class="coluna coluna2" data-column="coluna2">Segunda</th>
-						<th class="coluna coluna3" data-column="coluna3">Terça</th>
-						<th class="coluna coluna4" data-column="coluna4">Quarta</th>
-						<th class="coluna coluna5" data-column="coluna5">Quinta</th>
-						<th class="coluna coluna6" data-column="coluna6">Sexta</th>
-					</tr>
-					</thead>
-					<tbody>
-					<tr class="linha linha2">
-						<td class="coluna coluna1" data-column="coluna1">08:00</td>
-						<td class="coluna coluna2" data-column="coluna2">0</td>
-						<td class="coluna coluna3" data-column="coluna3">0</td>
-						<td class="coluna coluna4" data-column="coluna4">0</td>
-						<td class="coluna coluna5" data-column="coluna5">0</td>
-						<td class="coluna coluna6" data-column="coluna6">0</td>
-					</tr>
-					<tr class="linha linha3">
-						<td class="coluna coluna1" data-column="coluna1">10:00</td> <!-- Fixos: João G. e Marcos - ->
-						<td class="coluna coluna2" data-column="coluna2">2</td>
-						<td class="coluna coluna3" data-column="coluna3">2</td>
-						<td class="coluna coluna4" data-column="coluna4">2</td>
-						<td class="coluna coluna5" data-column="coluna5">2</td>
-						<td class="coluna coluna6" data-column="coluna6">2</td>
-					</tr>
-					<tr class="linha linha4">
-						<td class="coluna coluna1" data-column="coluna1">14:00</td> <!-- Fixos: Duda e Saulo | Rafa ter qui sex | Lucas seg qua sex | João S. seg ter qui - ->
-						<td class="coluna coluna2" data-column="coluna2">4</td> <!-- Seg Duda, Saulo, Lucas e João S. - ->
-						<td class="coluna coluna3" data-column="coluna3">4</td> <!-- Ter Duda, Saulo, Rafa e João S. - ->
-						<td class="coluna coluna4" data-column="coluna4">3</td> <!-- Qua Duda, Saulo, Lucas - ->
-						<td class="coluna coluna5" data-column="coluna5">4</td> <!-- Qui Duda, Saulo, Rafa e João S. - ->
-						<td class="coluna coluna6" data-column="coluna6">4</td> <!-- Sex Duda, Saulo, Rafa e Lucas - ->
-					</tr>
-					<tr class="linha linha5">
-						<td class="coluna coluna1" data-column="coluna1">16:00</td> <!-- Fixos: Raquel, José e Othon | Sophia qua | Allan ter e qui - ->
-						<td class="coluna coluna2" data-column="coluna2">3</td> <!-- Seg Raquel, José, Othon - ->
-						<td class="coluna coluna3" data-column="coluna3">3</td> <!-- Ter Raquel, José, Allan - ->
-						<td class="coluna coluna4" data-column="coluna4">4</td> <!-- Qua Raquel, José, Othon e Sophia - ->
-						<td class="coluna coluna5" data-column="coluna5">3</td> <!-- Qui Raquel, José, Allan - ->
-						<td class="coluna coluna6" data-column="coluna6">3</td> <!-- Sex Raquel, José, Othon  - ->
-					</tr>
-					<tr class="linha linha6">
-						<td class="coluna coluna1" data-column="coluna1">18:00</td>
-						<td class="coluna coluna2" data-column="coluna2">0</td>
-						<td class="coluna coluna3" data-column="coluna3">0</td>
-						<td class="coluna coluna4" data-column="coluna4">0</td>
-						<td class="coluna coluna5" data-column="coluna5">0</td>
-						<td class="coluna coluna6" data-column="coluna6">0</td>
-					</tr>
-					</tbody>
-				</table>
-			-->
 
 			<div class ="container-tabela" role="table" aria-label="vagas">
 
@@ -227,5 +167,24 @@
 	<footer>
 		<p>© 2023 <a href="https://www.leojs.dev" target="_blank">LeoJS.dev</a>. Todos os direitos reservados.</p>
 	</footer>
+	<script>
+		var ativo = false;
+		function mudaSanduiche() {
+			let menu = document.getElementById("nav-interno");
+			let xxx = document.getElementById("aberto");
+			let ooo = document.getElementById("fechado");
+			if (!ativo) {
+				menu.style.display = "inline-block";
+				x.style.display = "inline-block";
+				o.style.display = "none";
+				ativo = true;
+			} else {
+				menu.style.display = "none";
+				x.style.display = "none";
+				o.style.display = "inline-block";
+				ativo = false;
+			}
+		}
+	</script>
 </body>
 </html>
