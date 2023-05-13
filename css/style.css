@@ -52,7 +52,7 @@ html, body {
 @media (max-width:800px) {
 
     #sanduíche {
-        display: flex !important;
+        display: flex;
         position: absolute;
         right: 0px;
         z-index: 1;
@@ -101,11 +101,12 @@ html, body {
     }
 
     .card {
+        height: fit-content;
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .container-tabela {
+    #container-tabela {
         font-size: .8em;
         line-height: 16px;
 
@@ -117,7 +118,7 @@ html, body {
         text-align: center;
         margin: auto;
         margin-top: 0px;
-        margin-right: 0px !important;
+        margin-right: 0px;
         width: 100%;
         border-bottom: 1px solid var(--cor2);
         border-left: 1px solid var(--cor2);
@@ -130,29 +131,29 @@ html, body {
     }
 
     .nav-link a:hover:before {
-        transform: scaleX(0) !important;
+        transform: scaleX(0);
     }
 
 }
 
 #nav-interno {
-    transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out;
 }
 
 @media (max-width:500px) {
 
-    .img-foto {
-        float: none !important;
+    #img-foto {
+        float: none;
         display: block;
-        margin: auto !important;
-        margin-top: 20px !important;
+        margin: auto;
+        margin-top: 20px;
     }
 
-    .container-tabela {
-        font-size: .6em !important;
-        line-height: 16px !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
+    #container-tabela {
+        font-size: .6em;
+        line-height: 16px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -165,7 +166,7 @@ html, body {
     .cabeçalho {
         width: 100%;
         height: 420px;
-        margin-top: 40px;
+        margin-top: 60px;
         background-image: url(../img/fundo1.jpg);
         background-position: center;
         background-size: cover;
@@ -173,7 +174,7 @@ html, body {
         border: 1px solid var(--cor2);
     }
 
-    #sanduíche {
+    .sanduíche {
         display: none;
     }
 
@@ -252,6 +253,8 @@ html, body {
     }
 
     .card {
+        box-sizing:content-box;
+        min-height: 200px;
         box-shadow: 0px 1px 4px var(--cor5);
         padding: 40px;
         margin-bottom: 40px;
@@ -265,14 +268,13 @@ html, body {
     }
 
     .card a, footer a {
-        font-weight: bold;
+        text-decoration:double;
         color: var(--cor1);
         transition: transform 0.2s ease-in-out;
     }
 
     .card a:visited, footer a:visited {
-        color: var(--cor3);
-        transition: transform 0.2s ease-in-out;
+        color: var(--cor1);
     }
 
     .card a:hover, footer a:hover {
@@ -290,6 +292,7 @@ html, body {
         -moz-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
+        line-height: 1.5em;
     }
 
     .img-foto {
@@ -321,15 +324,11 @@ html, body {
         content: "\201D"; /* Fecha aspas */
     }
 
-    .card figcaption {
-        float: right;
-    }
-
 /* Tabela nova */
 
 .container-tabela {
     padding: 20px;
-    max-width: 600px;
+    width: 100%;
     margin: auto;
     font-size: 1em;
 }
@@ -341,6 +340,7 @@ html, body {
     color: var(--cor4);
     background-color: var(--cor5);
     font-weight: lighter;
+    line-height: 2em;
 }
 
 .cabecalho-tabela {
@@ -362,6 +362,7 @@ html, body {
 .linha-flex {
     text-align: center;
     width: 16.7%;
+    line-height: 2em;
     border: 1px solid var(--cor1);
     margin: 0;
     flex-grow: 6;
@@ -369,8 +370,7 @@ html, body {
 }
 
 .link-neutro:hover {
-    mix-blend-mode:multiply;
-    font-weight: bold;
+    mix-blend-mode: multiply;
 }
 
 .figure-wp {
