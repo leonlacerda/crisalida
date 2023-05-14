@@ -47,9 +47,17 @@ html, body {
         margin-top: 0px;
         transition: transform 0.2s ease-in-out;
     }
+
+    #redes-sociais {
+        height: calc(100vh - 420px);
+    }
 }
 
 @media (max-width:800px) {
+
+    #div-maps {
+        width: 100%;
+    }
 
     #sanduíche {
         display: flex;
@@ -95,7 +103,7 @@ html, body {
         transition: transform 0.2s ease-in-out;
     }
 
-    .conteudo {
+    #conteudo {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -248,6 +256,21 @@ html, body {
         font-weight: bold;
     }
 
+    .redes-sociais {
+        display: flex;
+        height: calc(100vh - 420px - 60px);
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .redes-sociais img {
+        width: 150px;
+        padding: 20px;
+    }
+
     .conteudo {
         padding: 40px;
     }
@@ -293,6 +316,19 @@ html, body {
         -ms-hyphens: auto;
         hyphens: auto;
         line-height: 1.5em;
+    }
+
+    .div-maps {
+        display: flex;
+        border: 1px solid var(--cor5);
+        box-shadow: 0px 1px 1px var(--cor1);
+        width: fit-content;
+        margin: auto;   
+    }
+
+    .maps {
+        margin: auto;
+        align-items: center;
     }
 
     .img-foto {
