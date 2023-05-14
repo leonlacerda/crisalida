@@ -51,9 +51,20 @@ html, body {
     #redes-sociais {
         height: calc(100vh - 420px);
     }
+
+    #conteudo {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media (max-width:800px) {
+
+    #redes-sociais img {
+        box-sizing: border-box;
+        width: 100px;
+        padding: 10px;
+    }
 
     #div-maps {
         width: 100%;
@@ -104,8 +115,8 @@ html, body {
     }
 
     #conteudo {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .card {
