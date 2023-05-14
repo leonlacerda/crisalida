@@ -267,6 +267,7 @@ html, body {
     }
 
     .redes-sociais img {
+        box-sizing: border-box;
         width: 150px;
         padding: 20px;
     }
