@@ -31,6 +31,7 @@ html, body {
     font-family: var(--fonte-opensans);
     color: var(--cor5);
     scroll-behavior: smooth;
+    background-color: var(--cor4);
     }
 
 @media (min-width: 800px) {
