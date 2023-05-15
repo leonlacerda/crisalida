@@ -53,8 +53,8 @@ html, body {
     }
 
     #conteudo {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
@@ -119,14 +119,17 @@ html, body {
     }
 
     #conteudo {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding: 0px;
+    }
+
+    #barra-paralaxe {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .card {
         height: fit-content;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     #container-tabela {
@@ -289,16 +292,72 @@ html, body {
         padding: 20px;
     }
 
+    .redes-sociais img:hover {
+        mix-blend-mode: multiply;
+    }
+
     .conteudo {
-        padding: 40px;
+        padding: 0px;
+    }
+
+    .barra-paralaxe {
+        width: 100%;
+        height: 420px;
+        background-color: var(--cor5);
+    }
+
+    .barra1 {
+        background-image: url(../img/fundo2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .barra2 {
+        background-image: url(../img/fundo3.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .barra3 {
+        background-image: url(../img/fundo4.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .barra4 {
+        background-image: url(../img/fundo5.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .barra5 {
+        background-image: url(../img/fundo6.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .barra6 {
+        background-image: url(../img/fundo7.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .card {
         box-sizing:content-box;
         min-height: 200px;
-        box-shadow: 0px 1px 4px var(--cor5);
         padding: 40px;
-        margin-bottom: 40px;
         position: relative;
     }
 
@@ -308,19 +367,18 @@ html, body {
         letter-spacing: .1em;
     }
 
-    .card a, footer a {
-        text-decoration:double;
+    .card a {
         color: var(--cor1);
         transition: transform 0.2s ease-in-out;
     }
 
-    .card a:visited, footer a:visited {
+    .card a:visited {
         color: var(--cor1);
     }
 
-    .card a:hover, footer a:hover {
-        color: var(--cor2);
+    .card a:hover {
         transition: transform 0.2s ease-in-out;
+        text-decoration: underline;
     }
 
     .texto-normal, .card blockquote {
@@ -342,6 +400,8 @@ html, body {
         box-shadow: 0px 1px 1px var(--cor1);
         width: fit-content;
         margin: auto;   
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .maps {
@@ -428,8 +488,8 @@ html, body {
 }
 
 .figure-wp {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     float: left;
     padding: 0px 20px 20px 20px;
     margin: 20px 20px 20px 0;
@@ -452,12 +512,32 @@ html, body {
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    max-width: 1000px;
     margin: auto;
-    padding-bottom: 40px;
-    background-color: var(--cor4);
+    background-color: var(--cor5);
 }
 
 footer p {
+    margin: auto;
     text-align: center;
     font-family: var(--fonte-opensans);
+    color: var(--cor4);
+}
+
+footer a {
+    color: var(--cor2) !important;
+    transition: transform 0.2s ease-in-out;
+}
+
+footer a:visited {
+    color: var(--cor2);
+}
+
+footer a:hover {
+    color: var(--cor2);
+    text-decoration: underline;
+    transition: transform 0.2s ease-in-out;
 }
