@@ -162,7 +162,7 @@ html, body {
     }
 
     .nav-link a:hover:before {
-        transform: scaleX(0);
+        transform: scaleX(0) !important;
     }
 
 }
