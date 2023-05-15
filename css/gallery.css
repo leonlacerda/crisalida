@@ -6,7 +6,7 @@ body { background: #eee; }
 .gallery {
   /* (B1) GRID LAYOUT - 3 IMAGES PER ROW */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 0px;
 
   /* (B2) OPTIONAL WIDTH RESTRICT */
