@@ -292,7 +292,7 @@ html, body {
     .redes-sociais {
         display: flex;
         height: calc(100vh - 420px - 60px);
-        max-height: 300px;
+        max-height: 310px;
         min-height: 150px;
         width: 100%;
         align-items: center;
